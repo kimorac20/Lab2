@@ -10,7 +10,6 @@ namespace Lab01.Logic
     {
         public Person()
         {
-
         }
 
         public Person(int id, string name, string lastName)

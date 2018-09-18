@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab01.Logic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,25 @@ namespace Lab02.Console
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("Person");
+
+            //Person person = new Person();
+            //person.Id = 1;
+            //person.Name = "Juan";
+            //person.LastName = "Perez";
+            //Person person = new Person(1, "Juan", "Perez");
+
+            Person person = new Person {
+                Id = 1,
+                Name = "Juan",
+                LastName = "Perez"
+            };
+
+            string personString = string.Format("Id:{0}, Name:{1}, LastName:{2}",person.Id,person.Name,person.LastName);
+
+            System.Console.WriteLine(personString);
+
+            System.Console.ReadKey();
         }
     }
 }

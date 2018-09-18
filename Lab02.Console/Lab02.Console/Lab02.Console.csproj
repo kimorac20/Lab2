@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Lab01.Console\Lab01.Console\Lab01.Logic.csproj">
+      <Project>{622ce49b-adfd-4fa2-b958-76bc7e463717}</Project>
+      <Name>Lab01.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
