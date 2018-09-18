@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab01.Logic
 {
-    public class Person
+    public class Person:ILogger
     {
         public Person()
         {
+            
         }
 
         public Person(int id, string name, string lastName)
@@ -23,6 +24,9 @@ namespace Lab01.Logic
         public string Name { get; set; }
         public string LastName { get; set; }
 
-
+        public void Log(string Log)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
